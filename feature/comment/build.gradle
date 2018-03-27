@@ -1,0 +1,29 @@
+apply plugin: 'com.android.feature'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/tools/tools.gradle"
+
+android {
+
+    defaultConfig {
+        consumerProguardFiles 'consumer-proguard-rules.pro'
+        multiDexEnabled true
+
+        testInstrumentationRunner "br.com.matheus.reddit.CustomTestRunner"
+    }
+
+    buildTypes {
+        debug {
+            testCoverageEnabled true
+        }
+        release {}
+    }
+
+}
+
+dependencies {
+    implementation project(':module:base')
+
+    // Testing
+    androidTestImplementation project(':module:test')
+}

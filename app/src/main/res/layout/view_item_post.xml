@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:padding="@dimen/default_padding"
+    tools:parentTag="android.support.constraint.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/post_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toStartOf="@+id/post_title"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_empty" />
+
+    <TextView
+        android:id="@+id/post_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/post_author"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/post_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/post_author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dwarf_margin"
+        android:paddingEnd="@dimen/default_padding"
+        android:paddingStart="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/post_comments"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/post_title"
+        app:layout_constraintTop_toBottomOf="@+id/post_title"
+        tools:text="Author" />
+
+    <TextView
+        android:id="@+id/post_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallest_margin"
+        android:drawablePadding="@dimen/dwarf_padding"
+        android:drawableStart="@drawable/ic_comment"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/App.TextAppearance.Small"
+        android:textColor="@color/old_lavender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/post_ups"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/post_author"
+        app:layout_constraintTop_toBottomOf="@+id/post_author"
+        tools:text="123" />
+
+    <TextView
+        android:id="@+id/post_ups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:drawablePadding="@dimen/dwarf_padding"
+        android:drawableStart="@drawable/ic_like"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/App.TextAppearance.Small"
+        android:textColor="@color/old_lavender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/post_downs"
+        app:layout_constraintStart_toEndOf="@+id/post_comments"
+        tools:text="123" />
+
+    <TextView
+        android:id="@+id/post_downs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:drawablePadding="@dimen/dwarf_padding"
+        android:drawableStart="@drawable/ic_dislike"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/App.TextAppearance.Small"
+        android:textColor="@color/old_lavender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/post_ups"
+        tools:text="123" />
+
+</merge>

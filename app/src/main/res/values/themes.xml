@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ApplicationTheme" parent="ApplicationTheme.Base">
+        <item name="itemPostViewStyle">@style/App.ItemPostView</item>
+        <item name="android:windowEnterTransition">@transition/post_transition</item>
+    </style>
+
+</resources>

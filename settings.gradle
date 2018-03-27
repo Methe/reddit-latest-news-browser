@@ -1,0 +1,3 @@
+include ':app'
+include ':feature:comment'
+include ':module:sdk', ':module:base', ':module:test'

@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: "$rootDir/tools/tools.gradle"
+
+android {
+
+    defaultConfig {
+        consumerProguardFiles 'consumer-proguard-rules.pro'
+    }
+
+    buildTypes {
+        debug {}
+        release {}
+    }
+}
+
+final versions = rootProject.ext
+
+dependencies {
+    api project(':module:sdk')
+
+    // Support
+    api "com.android.support:support-annotations:$versions.androidSupport"
+    api "com.android.support:design:$versions.androidSupport"
+    api "com.android.support.constraint:constraint-layout:$versions.constraintLayout"
+
+    // Picasso
+    api "com.squareup.picasso:picasso:$versions.picasso"
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/comment_list_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <br.com.matheus.reddit.base.view.WarningView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        app:icon="@drawable/ic_empty"
+        app:subtitle="@string/comment_list_empty_subtitle"
+        app:title="@string/comment_list_empty_title" />
+
+    <ProgressBar
+        android:id="@+id/progress_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <br.com.matheus.reddit.base.view.WarningView
+        android:id="@+id/error_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:actionTitle="@string/comment_list_error_action"
+        app:icon="@drawable/ic_error"
+        app:subtitle="@string/comment_list_error_subtitle"
+        app:title="@string/comment_list_error_title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:nestedScrollingEnabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

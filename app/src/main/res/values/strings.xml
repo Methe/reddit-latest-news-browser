@@ -1,0 +1,20 @@
+<resources>
+    <!--region Post List -->
+
+    <string name="post_list_empty_title">Oops… Seems like you don\'t have Posts, maybe later =P</string>
+    <string name="post_list_empty_subtitle">¯\\_(ツ)_/¯</string>
+
+    <string name="post_list_error_title">Error retrieving your posts…</string>
+    <string name="post_list_error_subtitle">Sorry</string>
+    <string name="post_list_error_action">Try again!</string>
+
+    <!--endregion-->
+
+    <!--region Post Detail -->
+
+    <string name="post_title">Post</string>
+    <string name="post_last_comments">Last Comments</string>
+
+    <!--endregion-->
+
+</resources>

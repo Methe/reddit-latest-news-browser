@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- ItemProjectView  -->
+    <style name="App.ItemPostView">
+        <item name="android:padding">@dimen/default_padding</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="titleTextAppearance">@style/App.ItemPostView.TitleTextAppearance</item>
+        <item name="authorTextAppearance">@style/App.ItemPostView.AuthorTextAppearance</item>
+    </style>
+
+    <style name="App.ItemPostView.TitleTextAppearance" parent="App.TextAppearance.Large">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="App.ItemPostView.AuthorTextAppearance" parent="App.TextAppearance.Medium">
+        <item name="android:textColor">@color/old_lavender</item>
+    </style>
+
+</resources>

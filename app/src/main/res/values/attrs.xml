@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="itemPostViewStyle" />
+    <declare-styleable name="ItemPostView">
+        <attr name="titleTextAppearance" />
+        <attr name="authorTextAppearance" format="reference" />
+    </declare-styleable>
+</resources>

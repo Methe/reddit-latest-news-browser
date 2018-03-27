@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Divider  -->
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_height</item>
+        <item name="android:background">@color/platinum</item>
+    </style>
+
+    <!-- TextAppearance  -->
+    <style name="App.TextAppearance" parent="android:TextAppearance">
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textColor">@color/dark_jungle_green</item>
+    </style>
+
+    <style name="App.TextAppearance.Small">
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+
+    <style name="App.TextAppearance.Medium">
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+
+    <style name="App.TextAppearance.Large">
+        <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <style name="App.TextAppearance.Header">
+        <item name="android:textSize">@dimen/header_text_size</item>
+    </style>
+
+    <!-- Toolbar  -->
+    <style name="App.Toolbar" parent="Base.Widget.AppCompat.Toolbar">
+        <item name="android:theme">@style/App.Toolbar</item>
+        <item name="android:background">?android:attr/colorPrimary</item>
+        <item name="titleTextAppearance">@style/App.Toolbar.Title</item>
+        <item name="title">@null</item>
+    </style>
+
+    <style name="App.Toolbar.Title" parent="App.TextAppearance.Header">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/munsell</item>
+    </style>
+
+    <!-- TextView  -->
+    <style name="App.TextView" parent="android:Widget.TextView">
+        <item name="android:textAppearance">@style/App.TextAppearance</item>
+        <item name="android:textAppearanceLarge">@style/App.TextAppearance.Large</item>
+        <item name="android:textAppearanceMedium">@style/App.TextAppearance.Medium</item>
+        <item name="android:textAppearanceSmall">@style/App.TextAppearance.Small</item>
+    </style>
+
+    <!-- Button  -->
+    <style name="App.Button" parent="android:Widget.Button">
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:textColor">@color/munsell</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:minHeight">@dimen/button_height_normal</item>
+        <item name="android:elevation">@dimen/default_elevation</item>
+        <item name="android:paddingEnd">@dimen/default_padding</item>
+        <item name="android:paddingStart">@dimen/default_padding</item>
+        <item name="android:textAppearance">@style/App.TextAppearance</item>
+    </style>
+
+    <style name="App.Button.Small">
+        <item name="android:minHeight">@dimen/button_height_small</item>
+        <item name="android:textAppearance">@style/App.TextAppearance.Medium</item>
+    </style>
+
+    <style name="App.Button.Large">
+        <item name="android:minHeight">@dimen/button_height_large</item>
+        <item name="android:paddingEnd">@dimen/medium_padding</item>
+        <item name="android:paddingStart">@dimen/medium_padding</item>
+        <item name="android:textAppearance">@style/App.TextAppearance.Large</item>
+    </style>
+
+</resources>

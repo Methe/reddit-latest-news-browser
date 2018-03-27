@@ -1,0 +1,10 @@
+<resources>
+    <string name="comment_list_empty_title">Oops… Seems like this post don\'t have Comments, maybe later =P</string>
+    <string name="comment_list_empty_subtitle">¯\\_(ツ)_/¯</string>
+
+    <string name="comment_list_error_title">Error retrieving comments…</string>
+    <string name="comment_list_error_subtitle">Sorry</string>
+    <string name="comment_list_error_action">Try again!</string>
+
+    <string name="comment_list_coming_soon">Coming Soon!!</string>
+</resources>

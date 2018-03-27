@@ -1,0 +1,34 @@
+<resources>
+
+    <style name="ApplicationTheme" parent="ApplicationTheme.Base" />
+
+    <style name="ApplicationTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/dark_pastel_blue</item>
+        <item name="colorPrimary">@color/cerulean_blue</item>
+        <item name="colorPrimaryDark">@color/dark_jungle_green</item>
+        <item name="colorControlHighlight">@color/platinum</item>
+
+        <item name="android:colorAccent">@color/dark_pastel_blue</item>
+        <item name="android:colorPrimary">@color/cerulean_blue</item>
+        <item name="android:colorPrimaryDark">@color/dark_jungle_green</item>
+        <item name="android:colorControlHighlight">@color/platinum</item>
+
+        <item name="android:windowBackground">@color/munsell</item>
+        <item name="colorControlNormal">@color/munsell</item>
+
+        <item name="android:windowTranslucentStatus">true</item>
+
+        <item name="toolbarStyle">@style/App.Toolbar</item>
+        <item name="android:toolbarStyle">@style/App.Toolbar</item>
+        <item name="android:textViewStyle">@style/App.TextView</item>
+        <item name="android:buttonStyle">@style/App.Button</item>
+        <item name="android:buttonStyleSmall">@style/App.Button.Small</item>
+
+        <item name="android:listDivider">@drawable/bg_divider</item>
+
+        <item name="warningViewStyle">@style/App.WarningView</item>
+    </style>
+
+    <style name="App" />
+
+</resources>

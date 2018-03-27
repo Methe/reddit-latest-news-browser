@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/post_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".detail.PostActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <br.com.matheus.reddit.view.ItemPostView
+                android:id="@+id/post_info"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/post_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/post_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/default_margin"
+                android:layout_marginStart="@dimen/default_margin"
+                android:textAppearance="@style/App.TextAppearance.Medium"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toTopOf="@+id/post_last_comments"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/post_info"
+                tools:text="Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big Post body text really big " />
+
+            <TextView
+                android:id="@+id/post_last_comments"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dwarf_margin"
+                android:layout_marginStart="@dimen/default_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:text="@string/post_last_comments"
+                android:textAppearance="@style/App.TextAppearance.Header"
+                android:textColor="@color/old_lavender"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/comment_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/post_content" />
+
+            <FrameLayout
+                android:id="@+id/comment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/post_last_comments" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

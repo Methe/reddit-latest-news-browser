@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Reddit.iml" filepath="$PROJECT_DIR$/Reddit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/project.iml" filepath="$PROJECT_DIR$/app/project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project/app.iml" filepath="$PROJECT_DIR$/project/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module/base/base.iml" filepath="$PROJECT_DIR$/module/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature/comment/comment.iml" filepath="$PROJECT_DIR$/feature/comment/comment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature/feature.iml" filepath="$PROJECT_DIR$/feature/feature.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module/module.iml" filepath="$PROJECT_DIR$/module/module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module/sdk/sdk.iml" filepath="$PROJECT_DIR$/module/sdk/sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module/test/base_test.iml" filepath="$PROJECT_DIR$/module/test/base_test.iml" />
+    </modules>
+  </component>
+</project>

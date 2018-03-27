@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/default_padding"
+    tools:parentTag="android.support.constraint.ConstraintLayout">
+
+    <TextView
+        android:id="@+id/comment_author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/App.TextAppearance.Large"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/comment_body"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Author" />
+
+    <TextView
+        android:id="@+id/comment_body"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dwarf_margin"
+        android:paddingEnd="@dimen/default_padding"
+        android:paddingStart="0dp"
+        android:textAppearance="@style/App.TextAppearance.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/comment_ups"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/comment_author"
+        app:layout_constraintTop_toBottomOf="@+id/comment_author"
+        tools:text="Comment" />
+
+    <TextView
+        android:id="@+id/comment_ups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallest_margin"
+        android:drawablePadding="@dimen/dwarf_padding"
+        android:drawableStart="@drawable/ic_like"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/App.TextAppearance.Small"
+        android:textColor="@color/old_lavender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/comment_downs"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/comment_replies"
+        app:layout_constraintStart_toStartOf="@+id/comment_body"
+        app:layout_constraintTop_toBottomOf="@+id/comment_body"
+        tools:text="123" />
+
+    <TextView
+        android:id="@+id/comment_downs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/default_margin"
+        android:drawablePadding="@dimen/dwarf_padding"
+        android:drawableStart="@drawable/ic_dislike"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/App.TextAppearance.Small"
+        android:textColor="@color/old_lavender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/comment_ups"
+        tools:text="123" />
+
+</merge>
