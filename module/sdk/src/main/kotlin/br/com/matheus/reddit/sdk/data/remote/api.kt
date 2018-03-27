@@ -27,8 +27,8 @@ internal interface Api {
     //region Post
 
     @GET("r/Android/new.json")
-    fun listProjects(@Query("after") afterPage: String,
-                     @Query("limit") limit: Int = 10): ResponseLiveData<Result<Page<Result<PostVO>>>>
+    fun listPosts(@Query("after") afterPage: String,
+                  @Query("limit") limit: Int = 10): ResponseLiveData<Result<Page<Result<PostVO>>>>
 
     //endregion
 

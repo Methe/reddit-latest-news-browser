@@ -15,7 +15,7 @@ object PostRepository {
                 firstPostPage.updateValue(firstPostPage.getData() + it)
             }
 
-    private fun getFormattedPostPage(page: String) = apiInstance.listProjects(afterPage = page)
+    private fun getFormattedPostPage(page: String) = apiInstance.listPosts(afterPage = page)
             .extractResult()
             .extractResultFromPage()
 
